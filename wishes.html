@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fais un Souhait ! 🌠</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-souhait">
+    <div class="background-blur-wishes"></div>
+    
+    <audio id="backgroundMusic" loop>
+        <source src="Happy_Birthday(256k).mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="balloons-container">
+        <div class="balloon-flying balloon1">🎈</div>
+        <div class="balloon-flying balloon2">🎈</div>
+        <div class="balloon-flying balloon3">🎈</div>
+        <div class="balloon-flying balloon4">🎈</div>
+        <div class="balloon-flying balloon5">🎈</div>
+        <div class="balloon-flying balloon6">🎈</div>
+        <div class="balloon-flying balloon7">🎈</div>
+        <div class="balloon-flying balloon8">🎈</div>
+        <div class="balloon-flying balloon9">🎈</div>
+        <div class="balloon-flying balloon10">🎈</div>
+        <div class="balloon-flying balloon11">🎈</div>
+        <div class="balloon-flying balloon12">🎈</div>
+    </div>
+
+    <div class="wishes-content">
+        <h1 class="wishes-title">🌠 Fais un Souhait ! 🌠</h1>
+        <p class="wishes-subtitle">Quel est ton plus beau rêve pour cette année ?</p>
+
+        <div class="wish-input-container">
+            <textarea id="wishInput" class="wish-textarea" placeholder="Écris ton souhait ici..."></textarea>
+            <button class="btn-submit-wish" onclick="submitWish()">Envoyer mon souhait ! ✨</button>
+        </div>
+
+        <div id="wishMessage" class="wish-message" style="display: none;">
+            <p>🎊 Merci pour ce beau souhait ! Que tes rêves se réalisent ! 🎊</p>
+        </div>
+
+        <button class="btn-back" onclick="goBack()">← Retour</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

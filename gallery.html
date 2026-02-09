@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie photos - Anniversaire Léonce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-gallery">
+    <div class="background-blur-gallery"></div>
+    
+    <audio id="backgroundMusic" loop>
+        <source src="Happy_Birthday(256k).mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="balloons-container">
+        <div class="balloon-flying balloon1">🎈</div>
+        <div class="balloon-flying balloon2">🎈</div>
+        <div class="balloon-flying balloon3">🎈</div>
+        <div class="balloon-flying balloon4">🎈</div>
+        <div class="balloon-flying balloon5">🎈</div>
+        <div class="balloon-flying balloon6">🎈</div>
+        <div class="balloon-flying balloon7">🎈</div>
+        <div class="balloon-flying balloon8">🎈</div>
+        <div class="balloon-flying balloon9">🎈</div>
+        <div class="balloon-flying balloon10">🎈</div>
+        <div class="balloon-flying balloon11">🎈</div>
+        <div class="balloon-flying balloon12">🎈</div>
+    </div>
+
+    <div class="gallery-content">
+        <h1 class="gallery-title">🎉 Galerie de Souvenirs 🎉</h1>
+        <p class="gallery-subtitle">Des moments inoubliables avec Léonce !</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="IMG-20260209-WA0032.jpg" alt="Souvenir 1" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG-20260209-WA0033.jpg" alt="Souvenir 2" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG-20260209-WA0035.jpg" alt="Souvenir 3" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG-20260209-WA0036.jpg" alt="Souvenir 4" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG-20260209-WA0038.jpg" alt="Souvenir 5" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG-20260209-WA0039.jpg" alt="Souvenir 6" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG-20260209-WA0040.jpg" alt="Souvenir 7" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="motion_photo_1659052651791947105.jpg" alt="Souvenir 8" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" src="">
+        </div>
+
+        <button class="btn-back" onclick="goBack()">← Retour</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
